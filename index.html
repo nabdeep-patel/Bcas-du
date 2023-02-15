@@ -1,9 +1,358 @@
-<html>
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+
 <head>
-  <title> BCAS </title>
+
+  <meta charset='UTF-8'>
+  <title>BCAS Physicists</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/vridhi-pages/pen/eYjEBMY?editors=0100">
+
+  
+  
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    @import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background: #420039;
+}
+
+.pretty-nav {
+  top:0;
+  width:100%;
+  position: fixed;
+  z-index:1;
+  background: #171738;
+  display: flex;
+  margin-top:-5px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.pretty-nav ul {
+  display: flex;
+  font-family: 'Marhey', cursive;
+  list-style-type: none;
+  overflow: hidden;
+  align-items: center;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.pretty-nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px;
+  margin-top: 8px;
+  display: block;
+}
+
+.pretty-nav ul li a::after {
+  content: '';
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  display: block;
+  transform: scaleX(.3);
+  opacity: 0;
+  border-bottom: 2px solid #d72638;
+}
+
+.pretty-nav ul li a:hover::after {
+  content: '';
+  opacity: 1;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  display: block;
+  transform: scaleX(1);
+  border-bottom: 2px solid #d72638;
+} 
+
+.pretty-nav button {
+  display: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 10px 4px;
+  outline: none;
+  border: none;
+  background: #d72638;
+}
+
+.pretty-nav button span {
+  background: white;
+  transition: all 0.2s ease-in-out;
+  width: 26px;
+  height: 1px;
+  border: 2px solid white;
+  margin-bottom: 6px;
+  display: block;
+  border-radius: 2px;
+}
+
+.pretty-nav button.collapsed span:nth-child(1) {
+  transform: translate(0px, 11px) rotate(45deg);
+}
+
+.pretty-nav button.collapsed span:nth-child(2) {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.pretty-nav button.collapsed span:nth-child(3) {
+  transform: translate(0px, -11px) rotate(-45deg);
+}
+
+.logo {
+ 
+  font-family: 'Marhey', cursive;
+  z-index: 1;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: #3423A6;
+  padding: 18px;
+  border-radius: 10rem;
+  display:inline-block;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 50%;
+  z-index: -2;
+  border-radius: 3rem 0 0 3rem;
+  background: rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.logo::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 3rem 3rem;
+  background: rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .pretty-nav {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pretty-nav button {
+    display: block;
+  }
+  .pretty-nav ul {
+    width: 100%;
+    flex-direction: column;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+  font-family: 'Poppins', cursive;
+	position: relative;
+	background: linear-gradient(0deg, #420039, #f24be2, #6a32ed, #020A16);
+	display: flex;
+    font-size: 17px;
+	justify-content: center;
+}
+h2 span {
+	position: sticky;
+	top: 0;
+	line-height: 100vh;
+	height: 50vh;
+	color: #fff;
+	margin-top: calc(100vh * var(--i));
+}
+}
+
+.pretty-nav ul.expanded {
+  max-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+h2 {
+  font-family: 'Poppins', cursive;
+	position: relative;
+	background: linear-gradient(0deg, #420039, #f24be2, #6a32ed, #020A16);
+	display: flex;
+	justify-content: center;
+}
+h2 span {
+	position: sticky;
+	top: 0;
+	line-height: 100vh;
+	height: 100vh;
+	color: #fff;
+	font-size: 6em;
+	margin-top: calc(100vh * var(--i));
+}
+
+.icon-scroll {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  width: 1em;
+	height: 3.125em;
+	transform: translateX(-50%) scale(2);
+	z-index: 99999;
+}
+
+.icon-arrows::after,
+.icon-arrows::before {
+  content: '';
+}
+.icon-arrows span,
+.icon-arrows::after,
+.icon-arrows::before {
+	display: block;
+	width: 0.315em;
+	height: 0.315em;
+	border-right: 1px solid rgba(255,255,255,.8);
+	border-bottom: 1px solid rgba(255,255,255,.8);
+	margin: 0 0 0.125em 0.315em;
+	transform: rotate(45deg);
+  animation: mouse-scroll 1s infinite;
+	animation-direction: alternate;
+}
+
+.icon-arrows::before {
+	margin-top: 0.315em;
+	animation-delay: .1s;
+}
+
+.icon-scroll span {
+	animation-delay: .2s;
+}
+
+.icon-arrows::after {
+	animation-delay: .3s;
+}
+
+.icon-scroll .mouse {
+	height: 1.375em;
+	width: .875em;
+	border: 1px solid rgba(255,255,255,.8);
+	border-radius: 2em;
+}
+
+.icon-scroll .wheel {
+  position: relative;
+  display: block;
+  height: 0.1875em;
+  width: 0.1875em;
+  margin: 0.1875em auto 0;
+  background: rgba(255,255,255,.8);
+  animation: mouse-wheel 1.2s ease infinite;
+  border-radius: 50%;
+}
+
+@keyframes mouse-wheel {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(.375em);
+	}
+}
+
+@keyframes mouse-scroll {
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+}
+section, footer {
+    background: #1A1E25;
+    color: #868c96;
+margin:-45;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
+
 <body>
-hello all
+  <nav class="pretty-nav">
+  <a href="httpsbcasdu.gq"><div class="logo">BCAS DU</div></a>
+  <button onclick="this.classList.toggle('collapsed');document.getElementById('nav-links').classList.toggle('expanded')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul id="nav-links">
+    <li><a href="#"><b>Notes</b></a></li>
+    <li><a href="#"><b>Practicals</b></a></li>
+    <li><a href="#"><b>About Us</b></a></li>
+  </ul>
+</nav>
+<div class="icon-scroll">
+  <div class="mouse">
+    <div class="wheel"></div>  
+  </div>
+  <div class="icon-arrows">
+    <span></span>
+  </div>
+</div>
+<h2 id="text" style="width:100%;">
+  <span style="--i : 0">  </span>
+	<span style="--i : 1"> P</span>
+	<span style="--i : 2"> H</span>
+	<span style="--i : 3"> Y</span>
+	<span style="--i : 4"> S</span>
+	<span style="--i : 5"> I</span>
+	<span style="--i : 6"> C</span>
+	<span style="--i : 7"> S</span>
+</h2>
+
+ <footer>
+        <p>Copyright &copy; 2023 | BCAS DU</p>
+    </footer>
+	
+<script>
+	var text = document.getElementById("text");
+	var shadow = '';
+	
+	for (var i = 0; i < 200; i++) {
+		shadow += (shadow? ',':'')+ i * 1+'px ' + i*1 + 'px 0px rgba(0, 0, 0, 0)';
+	}
+	
+	text.style.textShadow = shadow;
+</script>
+
 </body>
 </html>
-    
