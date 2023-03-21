@@ -1,472 +1,802 @@
+
 <!DOCTYPE html>
 <html lang='en' class=''>
 
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFMBX1BLF1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];Contact Us
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-FFMBX1BLF1');
+</script>
   <meta charset='UTF-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>BCAS Physicists</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="16x16" href="/black-vp.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
 
-<link rel="icon" type="image/png" sizes="16x16" href="/download.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/download.png">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  	
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Cabin');
-@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
-body {
-  margin: 0;
-  padding: 0;
-  width:100%;
-  background: #420039;
-}
-
-.pretty-nav {
-  top:0;
-  width:100%;
-  position: fixed;
-  z-index:1;
-  background: #171738;
-  display: flex;
-  margin-top:-5px;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.pretty-nav ul {
-  display: flex;
-  font-family: 'Marhey', cursive;
-  list-style-type: none;
-  overflow: hidden;
-  align-items: center;
-  transition: max-height 0.5s ease-in-out;
-}
-
-.pretty-nav ul li a {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  padding: 8px;
-  margin-top: 8px;
-  display: block;
-}
-
-.pretty-nav ul li a::after {
-  content: '';
-  transition: all 0.2s ease-in-out;
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  display: block;
-  transform: scaleX(.3);
-  opacity: 0;
-  border-bottom: 2px solid #d72638;
-}
-
-.pretty-nav ul li a:hover::after {
-  content: '';
-  opacity: 1;
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  display: block;
-  transform: scaleX(1);
-  border-bottom: 2px solid #d72638;
-} 
-
-.pretty-nav button {
-  display: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 10px 10px 4px;
-  outline: none;
-  border: none;
-  background: #d72638;
-}
-
-.pretty-nav button span {
-  background: white;
-  transition: all 0.2s ease-in-out;
-  width: 26px;
-  height: 1px;
-  border: 2px solid white;
-  margin-bottom: 6px;
-  display: block;
-  border-radius: 2px;
-}
-
-.pretty-nav button.collapsed span:nth-child(1) {
-  transform: translate(0px, 11px) rotate(45deg);
-}
-
-.pretty-nav button.collapsed span:nth-child(2) {
-  transform: scaleX(0);
-  opacity: 0;
-}
-
-.pretty-nav button.collapsed span:nth-child(3) {
-  transform: translate(0px, -11px) rotate(-45deg);
-}
-
-.logo {
- 
-  font-family: 'Marhey', cursive;
-  z-index: 1;
-  color: white;
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  background: #3423A6;
-  padding: 18px;
-  border-radius: 10rem;
-  display:inline-block;
-}
-
-.logo::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 50%;
-  z-index: -2;
-  border-radius: 3rem 0 0 3rem;
-  background: rgba(0, 0, 0, 0.2);
-  display: block;
-}
-
-.logo::after {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 0 0 3rem 3rem;
-  background: rgba(0, 0, 0, 0.2);
-  display: block;
-}
-    .card {
-      width: 50%;
-    }
-@media screen and (max-width: 1000px) {
-.card {
-      width: 60%;
-    }
-}
-@media screen and (max-width: 850px) {
-.card {
-      width: 70%;
-    }
-}
-@media screen and (max-width: 700px) {
-.card {
-      width: 80%;
-    }
-}
-@media screen and (max-width: 700px) {
-.card {
-      width: 88%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-  .pretty-nav {
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .pretty-nav button {
-    display: block;
-  }
-  .pretty-nav ul {
-    width: 100%;
-    flex-direction: column;
-    max-height: 0;
-    margin: 0;
-    padding: 0;
-  }
-  h2 {
-  font-family: 'Poppins', cursive;
-	position: relative;
-	background: linear-gradient(0deg, #420039, #f24be2, #6a32ed, #020A16);
-	display: flex;
-    font-size: 13px;
-	justify-content: center;
-}
-h2 span {
-	position: sticky;
-	top: 0;
-	line-height: 100vh;
-	height: 50vh;
-	color: #fff;
-	margin-top: calc(100vh * var(--i));
-}
-}
-
-.pretty-nav ul.expanded {
-  max-height: 100vh;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-h2 {
-  font-family: 'Poppins', cursive;
-	position: relative;
-	background: linear-gradient(0deg, #420039, #f24be2, #6a32ed, #020A16);
-	display: flex;
-	justify-content: center;
-}
-h2 span {
-	position: sticky;
-	top: 0;
-	line-height: 100vh;
-	height: 100vh;
-	color: #fff;
-	font-size: 6em;
-	margin-top: calc(100vh * var(--i));
-}
-
-.icon-scroll {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-  width: 1em;
-	height: 3.125em;
-	transform: translateX(-50%) scale(2);
-	z-index: 99999;
-}
-
-.icon-arrows::after,
-.icon-arrows::before {
-  content: '';
-}
-.icon-arrows span,
-.icon-arrows::after,
-.icon-arrows::before {
-	display: block;
-	width: 0.315em;
-	height: 0.315em;
-	border-right: 1px solid rgba(255,255,255,.8);
-	border-bottom: 1px solid rgba(255,255,255,.8);
-	margin: 0 0 0.125em 0.315em;
-	transform: rotate(45deg);
-  animation: mouse-scroll 1s infinite;
-	animation-direction: alternate;
-}
-
-.icon-arrows::before {
-	margin-top: 0.315em;
-	animation-delay: .1s;
-}
-
-.icon-scroll span {
-	animation-delay: .2s;
-}
-
-.icon-arrows::after {
-	animation-delay: .3s;
-}
-
-.icon-scroll .mouse {
-	height: 1.375em;
-	width: .875em;
-	border: 1px solid rgba(255,255,255,.8);
-	border-radius: 2em;
-}
-
-.icon-scroll .wheel {
-  position: relative;
-  display: block;
-  height: 0.1875em;
-  width: 0.1875em;
-  margin: 0.1875em auto 0;
-  background: rgba(255,255,255,.8);
-  animation: mouse-wheel 1.2s ease infinite;
-  border-radius: 50%;
-}
-
-@keyframes mouse-wheel {
-	0% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(.375em);
-	}
-}
-
-@keyframes mouse-scroll {
-	0%   { opacity: 0; }
-	50%  { opacity: .5; }
-	100% { opacity: 1; }
-}
-.footer {
-  background-color: #2e2b2b;
-  padding: 10px;
-  font-family: arial;
-  color: #ebd3d3;
-  text-align: center;
-    }
-
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    
   </style>
 
-  
+ 
 <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
 <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
 <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Vridhi-Pages</title> 
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                           
+  <style>
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap');
+body {
+  background: linear-gradient(to right,#045fc7,#044cc7,#0424c7,#0414c7);
+    margin-top:65px;}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  box-sizing: inherit;
+}
+.myimg { display:block;}
+    .myimg1{display:none;}
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+  opacity: 80.95%;
+    position: fixed;
+    width: 100%;
+    background: #060761;
+    color: white;
+    opacity: 0.85;
+    top:0;
+    z-index: 100;
+  font-family: 'Jost', sans-serif;
+font-family: 'Permanent Marker', cursive;
+}
+
+.navbar-container{
+  
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+  font-family: arial;
+}
+
+.menu-items li{
+    list-style: none;
+  text-align: center;
+    font-size: 1.3rem;
+  padding-left: 6px;
+  padding-right:4px;
+  
+}
+
+.navbar a{
+    color: cyan;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #060761;
+    text-shadow: -4px 2px cyan;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+  border-radius: 3px;
+}
+
+.btn::before {
+  content: "";
+  opacity: 0;
+  transform-origin: center center;
+  transform: scale3d(0.9, 0.65, 0.8);
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 3px;
+  background-color: cyan;
+  color: #060761;
+  z-index: -1;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  color: white;
+  border-color: transparent;
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+@media (max-width: 900px){
+    
+    .navbar{
+        opacity: 0.95;
+      
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: white;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: -19% 150%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-right:40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+      background-color: #07071f;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.2rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+  transform: scaleY(0);}
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+    .dashboard {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.12);
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.section {
+  margin: 30px 0;
+}
+
+/* =====Section Left======= */
+
+.section-left {
+  flex: 1;
+  padding: 15px;
+}
+.nfts {
+  padding: 0 8px;
+  margin: 25px 0;
+}
+
+.categories {
+  margin: 20px 0;
+}
+
+.category {
+  background: #fff;
+  padding: 6px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #161622;
+  transition: 0.3s linear;
+}
+/* =====Browse NFTs======= */
+
+.browse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nft {
+  background: #fff;
+  padding: 10px 20px 20px 20px;
+  border-radius: 25px;
+  transition: 0.4s linear;
+  margin: 10px 5px;
+}
+
+.nft img {
+  width: 100%;
+  height: 240px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.author {
+  font-size: 14px;
+}
+
+.price {
+  background: rgba(124, 248, 136, 0.346);
+  padding: 12px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #38c947;
+  font-weight: 600;
+}
+
+@media (max-width: 10590px) {
+  .dashboard-content {
+    padding: 0;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+ 
+@media (max-width: 640px) {
+  .browse {
+    grid-template-columns: 1fr;
+  }
+
+  .section-left{
+    padding: 0;
+  }
+
+  .nft {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 380px) {
+   .categories {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 300px) {
+   .price {
+    text-align: center;
+    padding: 5px;
+  }
+}
+h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+.footer {
+    background: #060761;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+/*END FOOTER SOCIAL DESIGN*/
+.single_footer{}
+@media only screen and (max-width:768px) { 
+.single_footer{margin-bottom:30px;}
+}
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single_footer ul li{}
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.single_footer ul li a:hover { color: #ff3666; }
+
+.single_footer_address{}
+.single_footer_address ul{}
+.single_footer_address ul li{color:#fff;}
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*START NEWSLETTER CSS*/
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+.subscribe__input {
+background-color: #fff;
+border: medium none;
+border-radius: 5px;
+color: #333;
+display: block;
+font-size: 15px;
+font-weight: 500;
+height: 60px;
+letter-spacing: 0.4px;
+margin: 0;
+padding: 0 150px 0 20px;
+text-align: center;
+text-transform: capitalize;
+width: 100%;
+}
+@media only screen and (max-width:768px) { 
+.subscribe__input{padding: 0 50px 0 20px;}
+}
+
+.subscribe__btn {
+background-color: transparent;
+border-radius: 0 25px 25px 0;
+color: #01c7e9;
+cursor: pointer;
+display: block;
+font-size: 20px;
+height: 60px;
+position: absolute;
+right: 0;
+top: 0;
+width: 60px;
+}
+.subscribe__btn i{transition: all 0.3s ease 0s;}
+@media only screen and (max-width:768px) { 
+.subscribe__btn{right:0px;}
+}
+
+.subscribe__btn:hover i{
+    color:#ff3666;
+}
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+/*END NEWSLETTER CSS*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {margin-top:40px;}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.social_profile ul li{float:left;}
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+@media only screen and (max-width:768px) { 
+.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a{
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+}
+  .social_profile ul li a.facebook:hover{
+background-color:#3b5998;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.youtube:hover{
+background-color:#FF0000; 
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+ .social_profile ul li a.instagram:hover{
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.telegram:hover{
+background-color:#0088cc;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.twitter:hover{
+background-color:#00aced;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.whatsapp:hover{
+background-color:#4fce5d;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color:#fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+}
+.copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+.copyright a:hover{color:#ff3666;}
+  </style>
+    <title>Physical Science</title>
 </head>
-
 <body>
-  <nav class="pretty-nav">
-  <a href="httpsbcasdu.gq"><div class="logo">BCAS DU</div></a>
-  <button onclick="this.classList.toggle('collapsed');document.getElementById('nav-links').classList.toggle('expanded')" style="margin-right:40px">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <ul id="nav-links">
-    <li><a href="#"><b>Notes</b></a></li>
-    <li><a href="#"><b>Practicals</b></a></li>
-    <li><a href="#"><b>About Us</b></a></li>
-  </ul>
-</nav>
-<div class="icon-scroll">
-  <div class="mouse">
-    <div class="wheel"></div>  
-  </div>
-  <div class="icon-arrows">
-    <span></span>
-  </div>
-</div>
-<h2 id="text" style="width:100%;">
-  <span style="--i : 0">  </span>
-	<span style="--i : 1"> P</span>
-	<span style="--i : 2"> H</span>
-	<span style="--i : 3"> Y</span>
-	<span style="--i : 4"> S</span>
-	<span style="--i : 5"> I</span>
-	<span style="--i : 6"> C</span>
-	<span style="--i : 7"> S</span>
-  </h2>
-  <h1 style="color: white; text-align:center; font-family: 'Poppins', cursive;"> Semester 4 Subjects </h1><hr>
-  <div class="card" style=" margin-left: auto;margin-right: auto;margin-bottom: 20px;">
-            <div class="row no-gutters">
-                <div class="col-sm-5">
-                    <img class="card-img" src="https://cdn-icons-png.flaticon.com/512/5229/5229558.png" alt="Mathematical Physics" style="max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;">
-                </div>
-                <div class="col-sm-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Mathematical Physics</h5>
-                        <p class="card-text">Mathematical physics refers to the development of mathematical methods for application to problems in physics.</p>
-                        <a href="#" class="btn btn-primary"> Go to Page </a>
-                    </div>
-                </div>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
+            <ul class="menu-items" style="color: #f4fc03;">
+                <li><a href="https://www.bcasdu.gq" class="btn">Home</a></li>
+               <li><a href="about.html" class="btn">About</a></li>
+              <li><a href="news.html" class="btn">Events</a></li>
+              <li><a href="news.html" class="btn">Contact Us</a></li>
+              <li><a style="border: 2px solid cyan;" href="sign.html" class="btn">Register</a></li>
+            </ul>
+            <h1 class="logo"><a style="font-family: 'Atomic Age', cursive; margin-bottom:auto;margin-top:auto;" href="https://www.vridhi-pages.cf">Vortexia</a></h1>
         </div>
-    </div>
-   <div class="card" style=" margin-left: auto;margin-right: auto;margin-bottom: 20px;">
-            <div class="row no-gutters">
-                <div class="col-sm-5">
-                    <img class="card-img" src="https://static.vecteezy.com/system/resources/previews/004/588/651/original/atom-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-dark-grey-icon-on-light-grey-background-free-vector.jpg" alt="Modern Physics" style="max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;">
-                </div>
-                <div class="col-sm-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Physics</h5>
-                        <p class="card-text">Modern physics is a branch of physics that deals with the post-Newtonian concepts in the world of physics. It is based on the two major breakthroughs of the twentieth century: Relativity and Quantum Mechanics.</p>
-                        <a href="#" class="btn btn-primary"> Go to Page </a>
+    </nav>
+<div class="myimg"><img src="Colorful%20Neon%20Gaming%20YouTube%20Channel%20Art.gif" width="100%" height="40%"></img></div>
+  <a href="#o" style='color: white'><p style="background-color:black;color:white;padding:16px;margin-top:-10px;text-align:center;font-size:20px;font-family:verneda;"><i class='fa fa-arrow-down' style='color: white'></i> Scroll Down <i class='fa fa-arrow-down' style='color: white'></i></p></a>
+</p>
+ <div class="dashboard" >
+        <div class="section flex flex-sb" >
+<!--<div class="section-left" >
+            
+            <div class="nfts">
+              <div class="trending heading flex flex-sb">
+              </div>
+              <div class="browse" >
+                <div class="nft">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/2471/2471982.png"
+                    alt=""
+                  />
+                  <div class="title">Creating Dashboards</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="black-vp.png"
+                        alt=""
+                      />
                     </div>
+                    <div class="price"><a href="dashboard.html">Start Now</a></div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-   
-   <div class="card" style=" margin-left: auto;margin-right: auto;margin-bottom: 20px;">
-            <div class="row no-gutters">
-                <div class="col-sm-5">
-                    <img class="card-img" src="https://media.istockphoto.com/id/1200388610/vector/cpu-line-icon.jpg?s=612x612&w=0&k=20&c=Fqqrxuhtbw7SAu48FRXlcNuHK4BpXvQQOpOCIn33GCY=" alt="Modern Physics" style="max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;">
-                </div>
-                <div class="col-sm-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Analog System and Application</h5>
-                        <p class="card-text">Analog System and Application is branch of physics which deal with analog systems and its applications in electronic devices.  </p>
-                        <a href="#" class="btn btn-primary"> Go to Page </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="card" style=" margin-left: auto;margin-right: auto;margin-bottom: 20px;">
-            <div class="row no-gutters">
-                <div class="col-sm-5">
-                    <img class="card-img" src="https://t4.ftcdn.net/jpg/00/98/29/13/360_F_98291335_eDN7PKEcw72ooNdUMedpTGUERk6AdPl7.jpg" alt="Modern Physics" style="max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;">
-                </div>
-                <div class="col-sm-7">
-                    <div class="card-body">
-                        <h5 class="card-title">SEC (Applied Optics)</h5>
-                        <p class="card-text">Applied Optics and Lasers involves the practical application of light, optics, and electronics in Laser based laboratories. </p>
-                        <a href="#" class="btn btn-primary"> Go to Page </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   <div class="card" style=" margin-left: auto;margin-right: auto;margin-bottom: 20px;">
-            <div class="row no-gutters">
-                <div class="col-sm-5">
-                    <img class="card-img" src="https://cdn.vectorstock.com/i/preview-1x/72/55/ge-minimal-logo-vector-45347255.jpg" alt="Modern Physics" style="max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;">
-                </div>
-                <div class="col-sm-7">
-                    <div class="card-body">
-                        <h5 class="card-title">General Elective (Maths)</h5>
-                        <p class="card-text">It is a forcefull addon subject which you don't want to take. But now it has been given so let's study it.</p>
-                        <a href="#" class="btn btn-primary"> Go to Page </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- <div class="footer">
-   <p><b>Location</b></p>
-   <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=bhaskaracharya college of applied sciences&t=k&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
-   <hr style="color:white; width:80%; margin:auto; height:2px;">
-   <p><b>Copyright &copy; 2023 | BCAS DU</b></p>
-</div>
-	
-<script>
-	var text = document.getElementById("text");
-	var shadow = '';
-	
-	for (var i = 0; i < 200; i++) {
-		shadow += (shadow? ',':'')+ i * 1+'px ' + i*1 + 'px 0px rgba(0, 0, 0, 0)';
-	}
-	
-	text.style.textShadow = shadow;
-</script>
 
+                <div class="nft">
+                  <img
+                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-2.jpg"
+                    alt=""
+                  />
+                  <div class="title">Spectrum of Color</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
+                        alt=""
+                      />
+                      <p>Hassnain Haider</p>
+                    </div>
+                    <div class="price">4 ETH</div>
+                  </div>
+                </div>
+
+                <div class="nft">
+                  <img
+                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-3.jpg"
+                    alt=""
+                  />
+                  <div class="title">Vivid Artwork</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
+                        alt=""
+                      />
+                      <p>Hassnain Haider</p>
+                    </div>
+                    <div class="price">3.5 ETH</div>
+                  </div>
+                </div>
+
+                <div class="nft">
+                  <img
+                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-4.jpg"
+                    alt=""
+                  />
+                  <div class="title">Nature's Love</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
+                        alt=""
+                      />
+                      <p>Hassnain Haider</p>
+                    </div>
+                    <div class="price">5 ETH</div>
+                  </div>
+                </div>-->
+              <div class="nft">
+                  <img
+                    src="https://cdn.dribbble.com/users/2139665/screenshots/6388149/oifbkcqo7j.gif"
+                    alt=""
+                  />
+                  <div class="title">Creating Navbars</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="black-vp.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price"><a href="navbar.html">Start Now</a></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+   </div></div>
+<div class="footer">
+            <div class="container"> 
+              <table width="100%" height="100%" style="text-align:left;">
+                <tr>
+                  <th>
+                    <div class="single_footer">
+                      <h4>Events</h4></div>
+                      </th>
+                    <th><div class="single_footer">
+                      <h4>Contact Us</h4></div></th>
+                </tr>
+                <tr>
+                  <th><div class="single_footer">
+                            <ul>
+                                
+                                <li><a href="#">!st....</a></li>
+                            </ul>
+                    </div></th>
+<th>
+                        <div class="single_footer">
+                            
+                            <ul>
+                                <li><a href="#">Whatsapp Group</a></li>
+                            </ul>
+                        </div
+                          </th>
+                          </tr>
+              </table>
+                    
+                        <div class="single_footer">
+                            <h4>Location</h4>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7000046343787!2d77.06664101854301!3d28.600023221755364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b31d1255555%3A0x684c6f99c46dff2f!2sBhaskaracharya%20College%20Of%20Applied%20Sciences!5e1!3m2!1sen!2sin!4v1679378291437!5m2!1sen!2sin" width="100%" height="200%" style="border-radius:6px;margin:0;" ></iframe>
+                        </div>
+                                                 
+                             
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <p class="copyright">Copyright © 2023 <b><a href="https://www.vridhi-pages.cf" style="color:cyan;">Vortexia</a></b> | Made with <i class="fa fa-heart pulse"style="color:red"></i> by <b> BCAS Physicists</b></p>
+                    </div><!--- END COL -->                 
+                </div><!--- END ROW -->                 
+            </div><!--- END CONTAINER -->
+        </div>
 </body>
 </html>
