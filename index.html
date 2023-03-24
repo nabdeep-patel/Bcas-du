@@ -98,7 +98,7 @@ font-family: 'Permanent Marker', cursive;
 .menu-items li{
     list-style: none;
   text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
   padding-left: 6px;
   padding-right:4px;
   
@@ -443,7 +443,7 @@ h1,
         }
 .footer {
     background: #060761;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 /*END FOOTER SOCIAL DESIGN*/
@@ -454,7 +454,7 @@ h1,
 .single_footer h4 {
     color: #fff;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 6px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 20px;
@@ -465,7 +465,7 @@ h1,
     height: 2px;
     width: 40px;
     background: #fff;
-    margin-top: 20px;
+    margin-top: 6px;
 }
 .single_footer p{color:#fff;}
 .single_footer ul {
@@ -555,78 +555,9 @@ button {
 }
 /*END NEWSLETTER CSS*/
 
-/*START SOCIAL PROFILE CSS*/
-.social_profile {margin-top:40px;}
-.social_profile ul{
-list-style: outside none none;
-margin: 0;
-padding: 0;
-}
-.social_profile ul li{float:left;}
-.social_profile ul li a {
-    text-align: center;
-    border: 0px;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    margin: 0px 5px;
-    font-size: 18px;
-    color: #fff;
-    border-radius: 30px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    display: block;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-@media only screen and (max-width:768px) { 
-.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
-}
-@media only screen and (max-width:480px) { 
-.social_profile ul li a{
-    width:40px;
-    height:40px;
-    line-height:40px;
-}
-}
-  .social_profile ul li a.facebook:hover{
-background-color:#3b5998;
-border: 1px solid #ff3666;
-color:#fff;
-border:0px;
-}
-  .social_profile ul li a.youtube:hover{
-background-color:#FF0000; 
-border: 1px solid #ff3666;
-color:#fff;
-border:0px;
-}
- .social_profile ul li a.instagram:hover{
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-border: 1px solid #ff3666;
-color:#fff;
-border:0px;
-}
-  .social_profile ul li a.telegram:hover{
-background-color:#0088cc;
-border: 1px solid #ff3666;
-color:#fff;
-border:0px;
-}
-  .social_profile ul li a.twitter:hover{
-background-color:#00aced;
-border: 1px solid #ff3666;
-color:#fff;
-border:0px;
-}
-  .social_profile ul li a.whatsapp:hover{
-background-color:#4fce5d;
-border: 1px solid #ff3666;
-color:#fff;
-border:0px;
-}
-/*END SOCIAL PROFILE CSS*/
+
 .copyright {
-    margin-top: 70px;
+    margin-top: 9px;
     padding-top: 40px;
     color:#fff;
     font-size: 15px;
@@ -651,11 +582,14 @@ border:0px;
 .rb-container ul.rb li {
   list-style: none;
   margin-left: 4rem;
+  border-left:2px solid white;
   min-height: 50px;
   padding: 0 0 50px 30px;
   position: relative;
 }
-
+.rb-container ul.rb li:last-child {
+   border-left:none;
+  }
 .rb-container ul.rb li::before {
   position: absolute;
   left: -16px;
@@ -697,114 +631,18 @@ ul.rb li .timestamp {
             <ul class="menu-items" style="color: #f4fc03;">
                 <li><a href="https://www.bcasdu.gq" class="btn">Home</a></li>
                <li><a href="about.html" class="btn">About</a></li>
-              <li><a href="news.html" class="btn">Events</a></li>
+              <li><a href="#event" class="btn">Events</a></li>
               <li><a href="news.html" class="btn">Contact Us</a></li>
-              <li><a style="border: 2px solid cyan;" href="sign.html" class="btn">Register</a></li>
-            </ul>
+              </ul>
             <h1 class="logo"><a style="font-family: 'Atomic Age', cursive; margin-bottom:auto;margin-top:auto;" href="https://www.bcasdu.gq">Episteme</a></h1>
         </div>
     </nav>
 <div class="myimg"><img src="p1.gif" width="100%" height="40%"></img></div>
   <a href="#o" style='color: white'><p style="background-color:black;color:white;padding:16px;margin-top:-10px;text-align:center;font-size:20px;font-family:verneda;"><i class='fa fa-arrow-down' style='color: white'></i> Scroll Down <i class='fa fa-arrow-down' style='color: white'></i></p></a>
 </p>
-<!-- <div class="dashboard" >
-        <div class="section flex flex-sb" >
-<div class="section-left" >
-            
-            <div class="nfts">
-              <div class="trending heading flex flex-sb">
-              </div>
-              <div class="browse" >
-                <div class="nft">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/2471/2471982.png"
-                    alt=""
-                  />
-                  <div class="title">Creating Dashboards</div>
-                  <div class="details flex flex-sb">
-                    <div class="author flex">
-                      <img
-                        src="black-vp.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="price"><a href="dashboard.html">Start Now</a></div>
-                  </div>
-                </div>
-                <div class="nft">
-                  <img
-                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-2.jpg"
-                    alt=""
-                  />
-                  <div class="title">Spectrum of Color</div>
-                  <div class="details flex flex-sb">
-                    <div class="author flex">
-                      <img
-                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
-                        alt=""
-                      />
-                      <p>Hassnain Haider</p>
-                    </div>
-                    <div class="price">4 ETH</div>
-                  </div>
-                </div>
-                <div class="nft">
-                  <img
-                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-3.jpg"
-                    alt=""
-                  />
-                  <div class="title">Vivid Artwork</div>
-                  <div class="details flex flex-sb">
-                    <div class="author flex">
-                      <img
-                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
-                        alt=""
-                      />
-                      <p>Hassnain Haider</p>
-                    </div>
-                    <div class="price">3.5 ETH</div>
-                  </div>
-                </div>
-                <div class="nft">
-                  <img
-                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-4.jpg"
-                    alt=""
-                  />
-                  <div class="title">Nature's Love</div>
-                  <div class="details flex flex-sb">
-                    <div class="author flex">
-                      <img
-                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
-                        alt=""
-                      />
-                      <p>Hassnain Haider</p>
-                    </div>
-                    <div class="price">5 ETH</div>
-                  </div>
-                </div>
-              <div class="nft">
-                  <img
-                    src="https://cdn.dribbble.com/users/2139665/screenshots/6388149/oifbkcqo7j.gif"
-                    alt=""
-                  />
-                  <div class="title">Creating Navbars</div>
-                  <div class="details flex flex-sb">
-                    <div class="author flex">
-                      <img
-                        src="black-vp.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="price"><a href="navbar.html">Start Now</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-   </div></div>-->
+
 <br>
-<br>
-<div style="width:50%;display:flex;margin-left:auto;margin-right:auto;border-radius:9px;padding:4px;background-color: #50d890; box-shadow: 3px 3px 15px rgba(119, 119, 119, 0.5);">
+<div id="event" style="width:90%;display:flex;margin-left:auto;margin-right:auto;border-radius:9px;padding:4px;background-color: #50d890; box-shadow: 3px 3px 15px rgba(119, 119, 119, 0.5);">
 <h1 style="color: black;
     text-align: center;
         margin-bottom: 0;
@@ -819,50 +657,119 @@ ul.rb li .timestamp {
   margin: 0 auto;
   border-radius:5px;
   position: relative;
-  margin-top: 10%;
+  margin-top: 2%;
   width:90%;
   box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);">
-  <div style="width:90%; height: 100%;">
-    <div class="rb-container"> 
+  <div style="width:90%; height: 100%;display:flex;">
+    <div class="rb-container">
       <ul class="rb">
         <li class="rb-item" ng-repeat="itembx">
           <div class="timestamp">
-            10:00 am - 10:30 pm
+            10:00 am - 10:30 am
           </div>
-          <div style="color:yellow;width:300px;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Event Name - Documentary </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Documentary </div>
           <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
          <div>
   <button type="button" onclick="window.location.href='doc.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
 </div>
         </li>
-        <li class="rb-item" ng-repeat="itembx"> 
-          <div class="timestamp"> 
-            19th May 2020 
-          </div>
-          <div class="item-title">Mia Redwood commented on your last post.</div>
-
-        </li>
-
         <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            10:30 am - 11:00 am
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Quiz </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='quiz.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li> 
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            11:00 am - 12:30 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Guest Lecture </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='lecture.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            12:30 pm - 1:00 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Lunch </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='doc.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            1:30 pm - 4:00 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Treasure Hunt
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='thunt.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            1:30 pm - 3:30 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Chess </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='chess.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            3:30 pm - 4:30 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Football </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='football.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            3:30 pm - 5:30 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;">Human Ludo </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='hludo.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            4:30 pm - 5:30 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Sack Race </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='sackrace.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li><li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            4:30 pm - 5:30 pm
+          </div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Sack Race </div>
+          <div class="item-title" style="border-radius:7px;font-family: cursive;">Some Text...</div>
+         <div>
+  <button type="button" onclick="window.location.href='sackrace.html';" style="margin-top:7px;border-radius: 50%;color:blue; background-color:white; font-size: 16px;font-family: 'DynaPuff', cursive;  padding: 6px 6px; cursor: pointer;border-radius: 3px;width:100%;">Click  Here</button>
+</div>
+        </li>
+                <li class="rb-item" ng-repeat="itembx">
           <div class="timestamp">
             17st June 2027:00 PM
           </div>
-          <div class="item-title">Lucas McAlister just send you a message.</div>
+          <div style="color:yellow;width:100%;padding:6px;margin-top:2px;border-radius:7px;font-size:20px;font-family: 'DynaPuff', cursive;"> Certificate Distribution </div>
+      <div class="item-title" style="font-family:comic sans ms">Certificate will be distributed to the participants.</div>
 
         </li>
-
       </ul>
-
     </div>
   </div>
 </div>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <br>
 <div class="footer">
             <div class="container"> 
