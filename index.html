@@ -620,8 +620,8 @@ ul.rb li .timestamp {
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
+        <div class="navbar-container container" style="display:block;">
+            <input type="checkbox" name="" id="checkId">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -629,9 +629,9 @@ ul.rb li .timestamp {
             </div>
             <ul class="menu-items" style="color: #f4fc03;">
                 <li><a href="https://www.bcasdu.gq" class="btn">Home</a></li>
-               <li><a href="#about" class="btn">About</a></li>
-              <li><a href="#event" class="btn">Events</a></li>
-              <li><a href="#contact" class="btn">Contact Us</a></li>
+               <li><a onclick="myFunction()"href="#about" class="btn">About</a></li>
+              <li><a onclick="myFunction()" href="#event" class="btn">Events</a></li>
+              <li><a onclick="myFunction()" href="#contact" class="btn">Contact Us</a></li>
               </ul>
             <h1 class="logo"><a style="font-family: 'Atomic Age', cursive; margin-bottom:auto;margin-top:auto;" href="https://www.bcasdu.gq">Episteme</a></h1>
         </div>
@@ -822,4 +822,10 @@ ul.rb li .timestamp {
                         </div>
                                                                 <p class="copyright">Copyright © 2023 <b><a href="https://www.bcasdu.gq" style="color:cyan;">Episteme</a></b> | Made with <i class="fa fa-heart" style="color:red"></i> by <b> Nabdeep Patel (Qubit Member)</b></p>               
              </div>
+  <script>
+    function myFunction() {
+        let inputs = document.getElementById('checkId');
+        inputs.checked = false;
+      }
+  </script>
 </body>
